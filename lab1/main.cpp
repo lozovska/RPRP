@@ -87,7 +87,6 @@ int main(int argc, char *argv[]) {
 
         printf("\n%s----------------Starting Multiplication----------------%s\n", CYN, RESET);
         
-        /*
         clock_t start1 = clock();
         for(int i = 0; i < M_SIZE; i++) {
             for(int j = 0; j < M_SIZE; j++) {
@@ -115,7 +114,7 @@ int main(int argc, char *argv[]) {
         double elapsed2 = (double) (finish2 - start2) / CLOCKS_PER_SEC;
         printf("%sStandart Method by columns:%s %f \n", CYN, RESET, elapsed2);
         // PrintMatrix(c2);
-        */
+     
         clock_t start3 = clock();
         workers_num = communicator_size - 1;
         whole_part = M_SIZE / workers_num;
